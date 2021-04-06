@@ -261,11 +261,9 @@ class Tarea1 extends Module
     }
     public function hookDisplayHome()
     {
-        $formulario=Configuration::get('texto_home');
+        $formulario = Configuration::get('texto_home');
         $this->smarty->assign(array('texto_home'=> $formulario));
 
-
-        echo Configuration::get('MYMODULE_NAME');
         return $this->display(__FILE__, 'views/templates/hook/tarea1.tpl');
         
     }
@@ -274,6 +272,6 @@ class Tarea1 extends Module
     {
         $formulario2=Configuration::get('texto_footer');
         $this->smarty->assign(array('texto_footer'=> $formulario2));
-        return $this->display(__FILE__, 'views/templates/hook/tarea1.tpl');
+        return $this->display(__FILE__, 'views/templates/hook/footer.tpl');
     }
 }

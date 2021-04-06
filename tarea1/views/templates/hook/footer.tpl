@@ -1,0 +1,1 @@
+<div>{$texto_footer}</div>
